@@ -2,11 +2,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html,
 body {
-    height: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
 .header_text {
@@ -16,9 +19,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin-left: 600px;
-    margin-top: 20px;
-    margin-bottom: 100px; */
 }
 
 a,
@@ -35,18 +35,23 @@ a,
     flex-wrap: nowrap;
 }
 
-.header,
-.top {
+.header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #1f2937;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    min-width: 100vh;
+    height: 75px;
 }
 
-.header {
-    height: 75px;
+.top {
+    display: flex;
+    min-width: 100vh;
+    flex-direction: row;
+    background-color: #1f2937;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .herotext {
@@ -60,9 +65,7 @@ a,
     flex-direction: row;
     justify-content: space-between;
     gap: 24px;
-    /* margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 600px; */
+    font-size: 18px;
 }
 
 .topright {
@@ -72,19 +75,16 @@ a,
     align-items: center;
     color: white;
     padding: 100px;
-    margin-right: 600px;
-    margin-bottom: 100px;
+
 }
 
 .topleft {
-    margin-left: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: nowrap;
     width: 450px;
     height: 300px;
-    margin-bottom: 100px;
 }
 
 .infotext {
@@ -100,6 +100,7 @@ a,
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .images {
@@ -136,6 +137,7 @@ a,
     flex-direction: column;
     justify-content: space-between;
     background-color: #e5e7eb;
+    min-width: 100vh;
 }
 
 .quotetext {
@@ -143,22 +145,21 @@ a,
     font-style: italic;
     font-weight: 300;
     color: #1f2937;
-    margin: 150px 1000px 0px 1000px;
-    height: 180px;
-    width: 800px;
+    margin: 75px 300px 0 300px;
 }
 
 .quotesign {
     font-size: 24px;
     color: #1f2937;
     font-weight: bold;
-    margin: 0px 500px 150px 1000px;
+    margin: 50px 300px 75px 300px;
+    align-self: flex-end;
 }
 
 .action {
     background-color: #3882f6;
     color: #e5e7eb;
-    width: 1000px;
+    width: 800px;
     height: 150px;
     border-radius: 15px;
     display: flex;
@@ -209,13 +210,8 @@ a,
 .footer {
     background-color: #1f2937;
     color: #e5e7eb;
-    text-align: center;
     padding: 30px;
-}
-
-.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100vh;
 }
